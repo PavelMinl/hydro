@@ -1,0 +1,127 @@
+.about{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.about__us{
+    margin: 100px 0 80px;
+}
+.about__us--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 880px;
+    margin: 0 auto 100px;
+}
+.about__us--container h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 180%;
+    color: #2D3033;
+    margin-bottom: 20px;
+}
+.about__us--container p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    color: #2D3033;
+}
+.about__us img{
+    border-radius: 8px;
+    width: 100%;
+}
+.about__why{
+    margin-bottom: 80px;
+}
+.about__why--container{
+    display: flex;
+    justify-content: space-between;
+}
+.about__why--block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #F7F9FB;
+    border-radius: 8px;
+    padding: 40px;
+    margin-right: 40px;
+    width: 100%;
+}
+.about__why--block:last-child{
+    margin-right: 0;
+}
+.about__why--block img{
+    margin-bottom: 40px;
+}
+.about__why--block p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #2D3033;
+    margin-bottom: 20px;
+}
+.about__why--block span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #2D3033;
+}
+.about__why h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: #2D3033;
+    margin-bottom: 50px;
+}
+@media (max-width: 1100px) {
+    .about{
+        padding: 0 20px;
+        margin: 0;
+    }
+    .about__us{
+        margin: 30px 0 40px;
+    }
+    .about__us--container{
+        align-items: flex-start;
+        margin: 0 0 30px;
+    }
+    .about__us--container h2{
+        font-size: 20px;
+    }
+    .about__us--container p{
+        font-size: 14px;
+    }
+    .about__why{
+        margin-bottom: 40px;
+    }
+    .about__why--container{
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .about__why--block{
+        width: initial;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 0;
+        flex-direction: row;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .about__why--block:last-child{
+        margin-bottom: 0;
+    }
+    .about__why--block img{
+        margin-bottom: auto;
+        margin-right: 20px;
+        width: 50px;
+    }
+    .about__why--block p{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .about__why--block span{
+        font-size: 14px;
+    }
+}

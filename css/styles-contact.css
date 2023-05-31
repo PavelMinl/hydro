@@ -1,0 +1,105 @@
+.company{
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.yandex__map iframe{
+    max-height: 320px;
+    border-radius: 8px;
+    margin: 80px 0 50px;
+}
+.company__contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.company__contact--block{
+    width: 100%;
+}
+.company__contact--text{
+    display: flex;
+    align-items: center;
+}
+.company__contact--block span{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #2D3033;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+.company__contact--text img{
+    margin-right: 10px;
+}
+.company__contact--text p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2D3033;
+    margin-right: 20%;
+}
+.company__contact--text .company__contact--number{
+    font-size: 18px;
+}
+.company__link{
+    border-top: 1px solid rgb(45, 48, 51, 0.2);
+    padding: 50px 0 80px;
+}
+.company__link p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #2D3033;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.company__link a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #FD6F08;
+    border-radius: 8px;
+    padding: 14px 70px;
+    text-decoration: none;
+}
+@media (max-width: 1100px) {
+    .company{
+        padding: 0 20px;
+    }
+    .yandex__map iframe{
+        margin: 20px 0 30px;
+    }
+    .company__contact{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .company__contact--block{
+        margin-bottom: 30px;
+    }
+    .company__contact--block:last-child{
+        margin-bottom: 40px;
+    }
+    .company__link{
+        padding: 30px 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .company__link p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .company__link a{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media(max-width: 600px) {
+    .company__link{
+        align-items: normal
+    }
+}
