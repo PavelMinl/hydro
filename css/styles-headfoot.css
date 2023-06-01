@@ -514,3 +514,93 @@ video {
         font-size: 12px;
     }
 }
+.the-arrow {
+    width: 1px;
+    transition: all 0.2s;
+}
+.the-arrow.-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.the-arrow.-left > .shaft {
+    width: 100%;
+    background-color: rgb(45, 48, 51, 0.15);
+}
+.arrow-bottom.the-arrow{
+    bottom: 0;
+    top: initial;
+}
+.the-arrow > .shaft {
+    background-color: rgb(45, 48, 51, 0.15);
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0s;
+    will-change: transform;
+}
+.the-arrow > .shaft:before,
+.the-arrow > .shaft:after {
+    background-color: rgb(45, 48, 51, 0.15);
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+    transition-delay: 0s;
+}
+.the-arrow > .shaft:before {
+    transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+    transform-origin: bottom right;
+}
+.animated--arrow {
+    position: relative;
+
+}
+.animated--arrow > .the-arrow.-left > .shaft:before,
+.animated--arrow > .the-arrow.-left > .shaft:after {
+    width: 8px;
+    transition-delay: 0.1s;
+    background-color: rgb(45, 48, 51, 0.15);
+}
+
+.animated--arrow > .the-arrow.-left > .shaft:before {
+    transform: rotate(40deg);
+}
+.animated--arrow > .the-arrow.-left > .shaft:after {
+    transform: rotate(-40deg);
+}
+.product__pdf{
+    display: flex;
+    align-items: center;
+}
+.product__pdf img{
+    margin-right: 20px;
+}
+.product__pdf--link a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    color: #2D3033;
+}
+.product__pdf--link span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2D3033;
+    opacity: 0.5;
+}
+.product__pdf--link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}

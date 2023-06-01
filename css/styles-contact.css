@@ -44,7 +44,6 @@
     font-size: 18px;
 }
 .company__link{
-    border-top: 1px solid rgb(45, 48, 51, 0.2);
     padding: 50px 0 80px;
 }
 .company__link p{
@@ -65,6 +64,67 @@
     padding: 14px 70px;
     text-decoration: none;
 }
+.company--the-arrow {
+    width: 1px;
+    transition: all 0.2s;
+}
+.company--the-arrow.-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.company--the-arrow.-left > .company--shaft {
+    width: 100%;
+    background-color: rgb(45, 48, 51, 0.15);
+}
+.company--the-arrow.-left > .company--shaft:before, .company--the-arrow.-left > .company--shaft:after {
+    width: 0;
+    background-color: rgb(45, 48, 51, 0.15);
+}
+.company--the-arrow.-left > .company--shaft:before {
+    transform: rotate(0);
+}
+.company--the-arrow.-left > .company--shaft:after {
+    transform: rotate(0);
+}
+.company--the-arrow > .company--shaft {
+    background-color: rgb(45, 48, 51, 0.15);
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0s;
+    will-change: transform;
+}
+.company--the-arrow > .company--shaft:before, .company--the-arrow > .company--shaft:after {
+    background-color: rgb(45, 48, 51, 0.15);
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+    transition-delay: 0s;
+}
+.company--the-arrow > .company--shaft:before {
+    transform-origin: top right;
+}
+.company--the-arrow > .company--shaft:after {
+    transform-origin: bottom right;
+}
+.company__animated--arrow {
+    position: relative;
+
+}
+.company__animated--arrow > .company--the-arrow.-left > .company--shaft:before,
+.company__animated--arrow > .company--the-arrow.-left > .company--shaft:after {
+    width: 8px;
+    transition-delay: 0.1s;
+    background-color: rgb(45, 48, 51, 0.15);
+}
+
 @media (max-width: 1100px) {
     .company{
         padding: 0 20px;
