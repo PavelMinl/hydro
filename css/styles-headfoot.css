@@ -230,14 +230,14 @@ video {
 .header__info a>img{
     margin-right: 5px;
 }
-.header__navigation{
+.header__downNavigation{
     display: flex;
     align-items: center;
 }
-.header__navigation img{
+.header__downNavigation img{
     margin: 0 30px;
 }
-.header__navigation a{
+.header__downNavigation a{
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -248,13 +248,131 @@ video {
     padding: 20px 0;
     border-top: 1px solid transparent;
  }
-.header__navigation a:hover{
+.header__downNavigation a:hover{
     color: #FD6F08;
     border-top: 1px solid #FD6F08;
 }
-.header--mobile,
-.header__burger{
+.header--mobile{
     display: none;
+}
+.header__navigation {
+    z-index: 12;
+    padding: 0 16px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    /* fade in checked menu */
+}
+.header__navigation .header__menu--checkbox {
+    display: none;
+}
+.header__navigation label.header__menu--toggle {
+    cursor: pointer;
+}
+.header__navigation .header__menu {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 388px;
+    width: calc(100vw - 30px);
+    height: 100%;
+    -moz-transform: translate3d(450px, 0, 0);
+    -o-transform: translate3d(450px, 0, 0);
+    -ms-transform: translate3d(450px, 0, 0);
+    -webkit-transform: translate3d(450px, 0, 0);
+    transform: translate3d(450px, 0, 0);
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.header__navigation .header__menu--overlay {
+    background-color: rgba(103, 103, 103, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+.header__navigation .header__menu--header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(45, 48, 51, 0.2);
+    margin: 0 -20px;
+    padding: 0 20px;
+}
+.header__navigation .header__menu--header>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header__menu--header div>p{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 130%;
+    color: #586068;
+    margin-left: 10px;
+}
+.header__navigation .header__menu .header__menu {
+    -moz-transform: translate3d(480px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
+    -ms-transform: translate3d(480px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
+    transform: translate3d(480px, 0, 0);
+}
+.header__navigation .header__menu--checkbox:checked ~ .header__menu--overlay {
+    display: block;
+}
+.header__navigation .header__menu--checkbox:checked ~ .header__menu {
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.header__menu--header img{
+    max-width: 174px;
+}
+.header__menu--header a>span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    text-decoration: none;
+    color: #2D3033;
+}
+.header__menu--header a{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.header__menu--list ul{
+    list-style-type: none;
+}
+.header__menu--list ul>li{
+    list-style-type: none;
+    padding: 30px 0;
+    text-align: center;
+}
+.header__menu--list ul>li>a{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2D3033;
+    text-decoration: none;
+}
+@media (min-width: 1100px) {
+    .header__navigation{
+        display: none;
+    }
 }
 @media (max-width: 1300px) {
     .header__info span,
@@ -271,9 +389,8 @@ video {
 
 }
 @media (max-width: 1100px) {
-    .header__burger{
-        display: block;
-        margin-left: 20px;
+    .header--container{
+        opacity: 1;
     }
     .header__info span{
         display: block;
@@ -281,7 +398,7 @@ video {
         font-size: 12px;
         color: #2D3033;
     }
-    .header__navigation,
+    .header__downNavigation,
     .header__logo--text,
     .header__info--mail,
     .header__language{
@@ -565,7 +682,7 @@ video {
 }
 .animated--arrow > .the-arrow.-left > .shaft:before,
 .animated--arrow > .the-arrow.-left > .shaft:after {
-    width: 8px;
+    width: 4px;
     transition-delay: 0.1s;
     background-color: rgb(45, 48, 51, 0.15);
 }
@@ -590,6 +707,7 @@ video {
     font-size: 16px;
     line-height: 180%;
     color: #2D3033;
+    cursor: pointer;
 }
 .product__pdf--link span{
     font-weight: 400;
