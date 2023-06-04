@@ -11,10 +11,19 @@
 <section class="header">
   <div class="header--container">
     <div class="header--mobile">
-      <select name="" id="input1" required="required" class="header__mobile--language">
-        <option style="background-image:url(img/header/header-kazakhstan.svg);" value="kz">KZ</option>
-        <option style="background-image:url(img/header/header-russia.svg);" value="ru">RU</option>
-      </select>
+      <div class="header__langMenu">
+        <div class="header__mobile--language header__langMenu--select">
+          RU
+        </div>
+        <ul>
+          <li>
+            <a class="kz"    href="#">KZ</a>
+          </li>
+          <li>
+            <a class="ru" href="#">RU</a>
+          </li>
+        </ul>
+      </div>
       <p>Качественные аксессуары для гидравлического оборудования</p>
     </div>
     <div class="header--cap">
@@ -41,10 +50,10 @@
           </div>
           <ul>
             <li>
-            <a class="kz" id="kz" href="#">KZ</a>
+            <a class="kz" href="#">KZ</a>
             </li>
             <li>
-              <a class="ru" id="ru" href="#">RU</a>
+              <a class="ru" href="#">RU</a>
             </li>
           </ul>
         </div>
@@ -59,10 +68,19 @@
         <div class="header__menu">
           <div class="header__menu--header">
             <div>
-              <select class="header__mobile--language">
-                <option style="background-image:url(img/header/header-kazakhstan.svg);" value="kz">KZ</option>
-                <option style="background-image:url(img/header/header-russia.svg);" value="ru">RU</option>
-              </select>
+              <div class="header__langMenu">
+                <div class="header__mobile--language header__langMenu--select">
+                  RU
+                </div>
+                <ul>
+                  <li>
+                    <a class="kz" href="#">KZ</a>
+                  </li>
+                  <li>
+                    <a class="ru" href="#">RU</a>
+                  </li>
+                </ul>
+              </div>
               <p>Качественные аксессуары для гидравлического оборудования</p>
             </div>
             <div>
@@ -253,7 +271,7 @@
     </div>
 </section>
 <script defer src="js/jquery.min.js"></script>
-<script defer src="js/main.js"></script>
+<script defer src="js/script-productDetail.js"></script>
 <script defer src="js/header.js"></script>
 </body>
 </html>
