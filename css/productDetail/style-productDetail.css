@@ -322,7 +322,9 @@
 .catalog__animated--arrow:hover .catalog--product--text a{
     color: #FD6F08;
 }
-
+.product__part--parameter p{
+    margin-left: 10px;
+}
 @media (max-width: 1250px){
     .product__part--price{
         flex-direction: column;
@@ -336,11 +338,16 @@
     .product__detail{
         padding: 0 20px 40px;
     }
+    .product__tabs--panel .product__pdf--link span,
+    .product__tabs--panel a,
+    .product__tabs--panel h2,
+    .product__tabs--panel p,
+    .product__pdf--link a,
     .product__part--history p{
         font-size: 14px;
     }
     .product__part--container{
-        align-items: center;
+        align-items: normal;
         flex-direction: column;
     }
     .product__part{
@@ -349,13 +356,9 @@
     .product__part--history{
         margin-left: 0;
     }
-    .product__part--img{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 35px;
-    }
     .product__part--img img{
         max-width: 360px;
+        width: 100%;
     }
     .catalog--product{
         gap: 20px;
@@ -380,45 +383,29 @@
         margin-right: 0;
         text-align: center;
     }
-    .product__part--price span{
+    .product__tabs--panel p{
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .product__pdf--link span,
+    .product__part--price span,
+    .product__part--parameter span,
+    .product__part--parameter p{
         font-size: 12px;
     }
     .product__part--price{
         margin-bottom: 30px;
-    }
-    .product__pdf--link a{
-        font-size: 14px;
-    }
-    .product__pdf--link span{
-        font-size: 12px;
     }
     .product__tabs li a{
         padding: 20px;
         font-size: 16px;
         white-space: nowrap;
     }
-    .product__tabs--panel p{
-        font-size: 14px;
-    }
-    .product__part--parameter span,
-    .product__part--parameter p{
-        font-size: 12px;
-    }
     .product__tabs{
         overflow-y: hidden;
     }
-    .product__tabs--panel a,
-    .product__tabs--panel h2{
-        font-size: 14px;
-    }
     .product__tabs--parameter{
         width: 80%;
-    }
-    .product__tabs--panel .product__pdf--link a{
-        font-size: 14px;
-    }
-    .product__tabs--panel .product__pdf--link span{
-        font-size: 14px;
     }
     .product__tabs--container{
         margin-bottom: 50px;
@@ -429,11 +416,18 @@
     }
 }
 @media (max-width: 880px) {
+    .product__tabs--parameter{
+        width: 100%;
+    }
     .catalog--product{
         grid-template-columns: 1fr 1fr
     }
     .catalog--product--container{
         justify-content: space-between
+    }
+    .product__part--parameter p,
+    .product__part--parameter span{
+        width: 100%;
     }
 
 }

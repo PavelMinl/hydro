@@ -16,3 +16,22 @@ for (let el of tabLinks) {
         panel[0].classList.add("active");
     });
 }
+
+const swiper = new Swiper('.swiper__detail', {
+    // Optional parameters
+    direction: 'horizontal',
+    speed: 800,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 6000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable:true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
