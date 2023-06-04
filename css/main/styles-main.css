@@ -5,13 +5,14 @@
     padding: 0 30px;
 }
 .main__slider{
-    margin: -60px -30px -4px;
     position: relative;
     min-height: 500px;
 }
+.main__swiper{
+    margin: -60px -30px 0;
+}
 .main__slider img{
     width: 100%;
-    min-height: 500px;
 }
 .main__slider h1{
     font-weight: 800;
@@ -270,9 +271,11 @@ margin-left: 20px;
     .main--container{
         padding: 0 20px;
     }
-    .main__slider{
+    .main__swiper{
         margin: 0 -20px;
-        min-height: 460px;
+    }
+    .main__slider{
+        min-height: 448px;
     }
     .main__slider--text{
         left: 20px;
@@ -286,11 +289,8 @@ margin-left: 20px;
         padding: 11px 23px;
     }
     .main__slider img{
-        min-height: 460px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        position: relative;
+       bottom: 0;
         object-fit: cover;
     }
     .catalog--product{
