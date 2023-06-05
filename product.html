@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles-headfoot.css">
-    <link rel="stylesheet" href="css/styles-product.css">
+    <link rel="stylesheet" href="css/product/styles-product.css">
+    <link rel="stylesheet" href="css/product/sumoselect.min.css">
 </head>
 <body>
 <section class="header">
@@ -166,6 +167,11 @@
 </div>
 <section class="product">
     <div class="catalog">
+       <select class="catalog--select">
+           <option>Сначала популярные</option>
+           <option>Новые</option>
+           <option>Годные</option>
+       </select>
         <div class="catalog--product">
             <div class="catalog--product--container catalog__animated--arrow">
                 <img src="img/catalog/accessories1.png">
@@ -243,6 +249,20 @@
           </span>
             </div>
         </div>
+        <div class="pagination">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a class="active" href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+        </div>
     </div>
 </section>
 <section class="footer">
@@ -284,5 +304,9 @@
         </div>
     </div>
 </section>
+<script defer src="js/product/jquery.min.js"></script>
+<script defer src="js/product/jquery.sumoselect.min.js"></script>
+<script defer src="js/product/script_pagination.js"></script>
+<script defer src="js/product/script.js"></script>
 </body>
 </html>
