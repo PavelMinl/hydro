@@ -23,15 +23,31 @@ const swiper = new Swiper('.swiper__detail', {
     speed: 800,
     slidesPerView: 1,
     autoplay: {
-        delay: 6000,
+        delay: 15000,
     },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        clickable:true,
+        clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    on: {
+        init: function () {
+            updateFractionPagination(this);
+        },
+        slideChange: function () {
+            updateFractionPagination(this);
+        },
+    }
 });
+
+function updateFractionPagination(swiper) {
+    var totalSlides = swiper.slides.length;
+    var activeIndex = swiper.activeIndex + 1;
+    var fractionText = '<span class="product__detail--index">' + activeIndex + '</span>' +' / ' + totalSlides;
+
+    document.querySelector('.swiper-pagination--fraction').innerHTML = fractionText;
+}

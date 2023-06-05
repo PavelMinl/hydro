@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper__main', {
     speed: 800,
     slidesPerView: 1,
     autoplay: {
-        delay: 6000,
+        delay: 15000,
     },
     pagination: {
         el: '.swiper-pagination',
@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper__main', {
 $(document).ready(function() {
     $('.header__mobile--language').click(function() {
         if ($(window).width() < 1100) {
-            $('.header__mobile--change').toggle();
+            $(this).siblings('.header__mobile--change').toggle();
         }
     });
 });
