@@ -68,6 +68,7 @@
     color: #FFFFFF;
     white-space: nowrap;
     margin-right: 30px;
+    cursor: pointer;
 }
 .product__part--price span{
     font-weight: 400;
