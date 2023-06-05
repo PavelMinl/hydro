@@ -16,3 +16,11 @@ const swiper = new Swiper('.swiper__main', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+$(document).ready(function() {
+    $('.header__mobile--language').click(function() {
+        if ($(window).width() < 1100) {
+            $('.header__mobile--change').toggle();
+        }
+    });
+});

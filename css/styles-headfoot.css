@@ -395,6 +395,9 @@ video {
     .header--container{
         opacity: 1;
     }
+    .header__langMenu:hover ul{
+        display: none;
+    }
     .header__info span{
         display: block;
         white-space: nowrap;
