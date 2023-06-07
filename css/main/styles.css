@@ -31,6 +31,8 @@
     background: #FD6F08;
     border-radius: 8px;
     margin-top: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 .main__slider--text{
     display: flex;
@@ -40,6 +42,9 @@
     left: 135px;
     top: 27%;
     width: 40%;
+}
+.main__slider--text a:hover{
+    background: #EA6200;
 }
 .catalog{
     margin: 80px 0;

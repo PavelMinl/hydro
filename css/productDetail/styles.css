@@ -69,6 +69,10 @@
     white-space: nowrap;
     margin-right: 30px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.product__part--price a:hover{
+    background: #EA6200;
 }
 .product__part--price span{
     font-weight: 400;

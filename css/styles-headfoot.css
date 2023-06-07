@@ -141,6 +141,10 @@ video {
     background: #FD6F08;
     border-radius: 8px;
     margin-right: 10px;
+    transition: all 0.3s;
+}
+.header__language--link:hover{
+    background: #EA6200;
 }
 .header__logo--link{
     text-decoration: none;
@@ -543,6 +547,10 @@ video {
     font-size: 16px;
     line-height: 130%;
     color: #FFFFFF;
+    transition: all 0.3s;
+}
+.footer__contacts--connect a:hover{
+    background: #EA6200;
 }
 .title{
     background: #F7F9FB;

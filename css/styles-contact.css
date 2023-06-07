@@ -33,6 +33,15 @@
 .company__contact--text img{
     margin-right: 10px;
 }
+.company__contact--text a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2D3033;
+    margin-right: 20%;
+    text-decoration: none;
+    transition: all 0.3s;
+}
 .company__contact--text p{
     font-weight: 700;
     font-size: 16px;
@@ -63,6 +72,10 @@
     border-radius: 8px;
     padding: 14px 70px;
     text-decoration: none;
+    transition: all 0.3s;
+}
+.company__link a:hover{
+    background: #EA6200;
 }
 .company--the-arrow {
     width: 1px;
@@ -83,10 +96,10 @@
     background-color: rgb(45, 48, 51, 0.15);
 }
 .company--the-arrow.-left > .company--shaft:before {
-    transform: rotate(0);
+    transform: rotate(40deg);
 }
 .company--the-arrow.-left > .company--shaft:after {
-    transform: rotate(0);
+    transform: rotate(-40deg);
 }
 .company--the-arrow > .company--shaft {
     background-color: rgb(45, 48, 51, 0.15);
