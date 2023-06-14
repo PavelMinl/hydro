@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles-headfoot.css">
-    <link rel="stylesheet" href="css/styles-contact.css">
+    <link rel="stylesheet" href="css/product/styles-product.css">
+    <link rel="stylesheet" href="css/product/sumoselect.min.css">
 </head>
 <body>
 <section class="header">
@@ -27,18 +28,18 @@
         </div>
         <div class="header--cap">
             <div class="header__logo">
-                <a href="index.html" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
+                <a href="index.php" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
                 <p class="header__logo--text">Качественные аксессуары для гидравлического оборудования</p>
             </div>
             <div class="header__connect">
                 <div class="header__info">
                     <div class="header__info--number">
                         <p>Телефон:</p>
-                        <a href="tel:79808908487"><img src="img/header/header-phone.svg"><span>+7 (980) 890-84-87</span></a>
+                        <a><img src="img/header/header-phone.svg"><span>+7 (980) 890-84-87</span></a>
                     </div>
                     <div class="header__info--mail">
                         <p>E-mail:</p>
-                        <a href="mailto:info@hydrocarasia.ru"><img src="img/header/header-mail.svg"><span>info@hydrocarasia.ru</span></a>
+                        <a><img src="img/header/header-mail.svg"><span>info@hydrocarasia.ru</span></a>
                     </div>
                 </div>
                 <div class="header__language">
@@ -84,7 +85,7 @@
                             </div>
                             <div>
                                 <img src="img/hydrocar-logo.png">
-                                <a href="tel:79808908487"><img src="img/header/header-phone.svg"><span>+7 (980) 890-84-87</span></a>
+                                <a><img src="img/header/header-phone.svg"><span>+7 (980) 890-84-87</span></a>
                                 <label class="header__menu--toggle" for="menu">
                                     <img src="img/header/header-close.svg">
                                 </label>
@@ -92,11 +93,11 @@
                         </div>
                         <div class="header__menu--list">
                             <ul>
-                                <li class="animated--arrow"><a href="index.html">Главная</a></li>
+                                <li class="animated--arrow"><a href="index.php">Главная</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="catalog.html">Каталог товаров</a></li>
+                                    <a href="catalog.php">Каталог товаров</a></li>
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
@@ -109,11 +110,11 @@
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
-                         </span><a href="about.html">О компании</a></li>
+                         </span><a href="about.php">О компании</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="contact.html">Контакты</a>
+                                    <a href="contact.php">Контакты</a>
                                     <span class="arrow-bottom the-arrow -left">
                              <span class="shaft"></span>
                          </span></li>
@@ -124,73 +125,144 @@
             </div>
         </div>
         <div class="header__downNavigation">
-            <a href="index.html" class="header__navigation--link">Главная</a>
+            <a href="index.php" class="header__navigation--link">Главная</a>
             <img src="img/header/header-plug.svg">
-            <a href="catalog.html" class="header__navigation--link">Каталог товаров</a>
+            <a href="catalog.php" class="header__navigation--link">Каталог товаров</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Документация</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Фото и видео</a>
             <img src="img/header/header-plug.svg">
-            <a href="about.html" class="header__navigation--link">О компании</a>
+            <a href="about.php" class="header__navigation--link">О компании</a>
             <img src="img/header/header-plug.svg">
-            <a href="contact.html" class="header__navigation--link">Контакты</a>
+            <a href="contact.php" class="header__navigation--link">Контакты</a>
         </div>
     </div>
 </section>
 <div class="title">
     <div class="title--container">
-        <h1>Контакт</h1>
+        <h1>Однопоточные гидронасосы</h1>
         <div class="breadcrumbs">
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="index.php">
                         <span>Главная</span>
                     </a>
                 </li>
                 <li class="breadcrumbs-divider"><img src="img/breadcrumbs-line.svg"></li>
                 <li>
-                    <a href="/">
-                        <span>Контакты</span>
+                    <a href="catalog.php">
+                        <span>Каталог товаров</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-divider"><img src="img/breadcrumbs-line.svg"></li>
+                <li>
+                    <a href="#">
+                        <span>Однопоточные гидронасосы</span>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
-<section class="company">
-    <div class="yandex__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad4e27130eab8b4d3d0212b4324911c26c1223566476896b6d1567d39c96c88ec&amp;source=constructor" width="100%" height="506" frameborder="0"></iframe>
-          </div>
-    <div class="company__contact">
-        <div class="company__contact--block">
-            <span>Адрес:</span>
-            <div class="company__contact--text">
-                <img src="img/contact/contact-map.svg">
-                <p>Республика Казахстан, г.&nbsp;Караганда, ул.&nbsp;Сатпаева, дом&nbsp;51</p>
+<section class="product">
+    <div class="catalog">
+       <select class="catalog--select">
+           <option>Сначала популярные</option>
+           <option>Новые</option>
+           <option>Годные</option>
+       </select>
+        <div class="catalog--product">
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories1.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories2.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories3.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories1.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories2.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories3.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories2.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories3.png">
+                <div class="catalog--product--text">
+                    <a href="product-detail.php">SCP 012-5598 ISO</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
             </div>
         </div>
-        <div class="company__contact--block">
-            <span>Телефон:</span>
-            <div class="company__contact--text">
-                <img src="img/contact/contact-phone.svg">
-                <a href="tel:79808908487" class="company__contact--number">+7 (980) 890-84-87</a>
-            </div>
+        <div class="pagination">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a  href="#">4</a></li>
+                <li><a class="active" href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
         </div>
-        <div class="company__contact--block">
-            <span>E-mail:</span>
-            <div class="company__contact--text">
-                <img src="img/contact/contact-mail.svg">
-                <a href="mailto:info@hydrocarasia.ru">info@hydrocarasia.ru</a>
-            </div>
-        </div>
-    </div>
-    <div class="company__link company__animated--arrow">
-        <span class="company--the-arrow -left">
-          <span class="company--shaft"></span>
-        </span>
-        <p>У вас остались вопросы или есть предложения? Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-        <a href="#">Связаться</a>
     </div>
 </section>
 <section class="footer">
@@ -198,15 +270,15 @@
         <div class="footer__navigation">
             <a href="#" class="footer__navigation--link">Главная</a>
             <img src="img/header/header-plug.svg">
-            <a href="#" class="footer__navigation--link">Каталог товаров</a>
+            <a href="#"  class="footer__navigation--link">Каталог товаров</a>
             <img src="img/header/header-plug.svg">
-            <a href="#" class="footer__navigation--link">Документация</a>
+            <a href="#"  class="footer__navigation--link">Документация</a>
             <img src="img/header/header-plug.svg">
-            <a href="#" class="footer__navigation--link">Фото и видео</a>
+            <a href="#"  class="footer__navigation--link">Фото и видео</a>
             <img src="img/header/header-plug.svg">
-            <a href="#" class="footer__navigation--link">О компании</a>
+            <a href="#"  class="footer__navigation--link">О компании</a>
             <img src="img/header/header-plug.svg">
-            <a href="#" class="footer__navigation--link">Контакты</a>
+            <a href="#"  class="footer__navigation--link">Контакты</a>
         </div>
         <div class="footer__info">
             <div class="footer__contacts">
@@ -217,21 +289,25 @@
                 <div class="footer__connect">
                     <div class="footer__connect--number">
                         <p>Телефон:</p>
-                        <a href="tel:79808908487"><img src="img/footer/footer-number.svg">+7 (980) 890-84-87</a>
+                        <a><img src="img/footer/footer-number.svg">+7 (980) 890-84-87</a>
                     </div>
                     <div class="footer__connect--mail">
                         <p>E-mail:</p>
-                        <a href="mailto:info@hydrocarasia.ru"><img src="img/footer/footer-mail.svg">info@hydrocarasia.ru</a>
+                        <a><img src="img/footer/footer-mail.svg">info@hydrocarasia.ru</a>
                     </div>
                 </div>
                 <div class="footer__contacts--connect">
-                    <a href="#">Связаться</a>
+                    <a>Связаться</a>
                 </div>
             </div>
             <div class="footer__rights--reserved">© ООО «HYDROCARasia». 2023 г. Все права защищены.</div>
         </div>
     </div>
 </section>
+<script defer src="js/product/jquery.min.js"></script>
+<script defer src="js/product/jquery.sumoselect.min.js"></script>
+<script defer src="js/product/script_pagination.js"></script>
+<script defer src="js/product/script.js"></script>
 <script defer src="js/header/script-header.js"></script>
 </body>
 </html>

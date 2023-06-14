@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles-headfoot.css">
-    <link rel="stylesheet" href="css/main/styles.css">
+    <link rel="stylesheet" href="css/styles-catalog.css">
 </head>
 <body>
 <section class="header">
@@ -27,7 +27,7 @@
         </div>
         <div class="header--cap">
             <div class="header__logo">
-                <a href="index.html" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
+                <a href="index.php" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
                 <p class="header__logo--text">Качественные аксессуары для гидравлического оборудования</p>
             </div>
             <div class="header__connect">
@@ -92,11 +92,11 @@
                         </div>
                         <div class="header__menu--list">
                             <ul>
-                                <li class="animated--arrow"><a href="index.html">Главная</a></li>
+                                <li class="animated--arrow"><a href="index.php">Главная</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="catalog.html">Каталог товаров</a></li>
+                                    <a href="catalog.php">Каталог товаров</a></li>
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
@@ -109,11 +109,11 @@
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
-                         </span><a href="about.html">О компании</a></li>
+                         </span><a href="about.php">О компании</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="contact.html">Контакты</a>
+                                    <a href="contact.php">Контакты</a>
                                     <span class="arrow-bottom the-arrow -left">
                              <span class="shaft"></span>
                          </span></li>
@@ -124,141 +124,179 @@
             </div>
         </div>
         <div class="header__downNavigation">
-            <a href="index.html" class="header__navigation--link">Главная</a>
+            <a href="index.php" class="header__navigation--link">Главная</a>
             <img src="img/header/header-plug.svg">
-            <a href="catalog.html" class="header__navigation--link">Каталог товаров</a>
+            <a href="catalog.php" class="header__navigation--link">Каталог товаров</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Документация</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Фото и видео</a>
             <img src="img/header/header-plug.svg">
-            <a href="about.html" class="header__navigation--link">О компании</a>
+            <a href="about.php" class="header__navigation--link">О компании</a>
             <img src="img/header/header-plug.svg">
-            <a href="contact.html" class="header__navigation--link">Контакты</a>
+            <a href="contact.php" class="header__navigation--link">Контакты</a>
         </div>
     </div>
 </section>
-<section class="main">
-    <div class="main--container">
-        <div class="swiper__main main__swiper">
-            <div class="swiper-wrapper">
-                    <div class="swiper-slide main__slider">
-                        <img src="img/main/hydraulic-main.png">
-                        <div class="main__slider--text">
-                            <h1>Гидравлическое оборудование для спецтехники</h1>
-                            <a>Посмотреть каталог</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide main__slider">
-                        <img src="img/main/hydraulic-main.png">
-                        <div class="main__slider--text">
-                            <h1>Гидравлическое оборудование для спецтехники</h1>
-                            <a>Посмотреть каталог</a>
-                        </div>
-                    </div>
-                <div class="swiper-slide main__slider">
-                    <img src="img/main/hydraulic-main.png">
-                    <div class="main__slider--text">
-                        <h1>Гидравлическое оборудование для спецтехники</h1>
-                        <a>Посмотреть каталог</a>
-                    </div>
-                </div>
-                <div class="swiper-slide main__slider">
-                    <img src="img/main/hydraulic-main.png">
-                    <div class="main__slider--text">
-                        <h1>Гидравлическое оборудование для спецтехники</h1>
-                        <a>Посмотреть каталог</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-pagination_1"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+<div class="title">
+    <div class="title--container">
+        <h1>Каталог товаров</h1>
+        <div class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs-divider"><img src="img/breadcrumbs-line.svg"></li>
+                <li>
+                    <a href="catalog.php">
+                        <span>Каталог товаров</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="catalog">
-            <h1>Каталог товаров</h1>
-            <div class="catalog--product">
-                <div class="catalog--product--container catalog__animated--arrow">
-                    <img src="img/main/main-obor.png">
-                    <div class="catalog--product--text">
-                        <a href="catalog.html">Гидравлическое оборудование</a>
-                    </div>
-                    <span class="catalog--the-arrow -left">
+    </div>
+</div>
+<section class="catalog">
+    <div class="catalog--container">
+        <h1>Гидравлическое оборудование</h1>
+        <div class="catalog--product">
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/main/main-obor.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Гидравлическое оборудование</a>
+                </div>
+                <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
           </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/main/main-accessories.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Гидравлические компоненты</a>
                 </div>
-                <div class="catalog--product--container catalog__animated--arrow">
-                    <img src="img/main/main-accessories.png">
-                    <div class="catalog--product--text">
-                        <a href="catalog.html">Гидравлические компоненты</a>
-                    </div>
-                    <span class="catalog--the-arrow -left">
+                <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
           </span>
-                    </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/main/main-complite.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Готовые решения</a>
                 </div>
-                <div class="catalog--product--container catalog__animated--arrow">
-                    <img src="img/main/main-complite.png">
-                    <div class="catalog--product--text">
-                        <a href="catalog.html">Готовые решения</a>
-                    </div>
-                    <span class="catalog--the-arrow -left">
+                <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
           </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/main/main-komponent.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Аксессуары</a>
                 </div>
-                <div class="catalog--product--container catalog__animated--arrow">
-                    <img src="img/main/main-komponent.png">
-                    <div class="catalog--product--text">
-                        <a href="catalog.html">Аксессуары</a>
-                    </div>
-                    <span class="catalog--the-arrow -left">
+                <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
           </span>
-                </div>
             </div>
         </div>
-        <div class="about">
-            <div class="about--container">
-                <div class="about__us">
-                    <h1>О компании</h1>
-                    <p>Компания «ГИДРАМАКС» была создана в 2009 году. Ее история началась с открытия первого в России
-                        магазина ParkerStore. За 12 лет компания заняла и укрепила свои лидерские позиции на рынке.
-                        Сегодня «ГИДРАМАКС» имеет статус «Премьер» от компании Parker Hannifin Russia по большому
-                        ассортименту продукции, специализируется на дистрибуции, сервисных и ремонтных работах
-                        оборудования Parker Hannifin Russia. </p>
-                    <a>Подробнее <img src="img/main/main-right.svg"></a>
+    </div>
+    <div class="catalog--container">
+        <h1>Гидравлические компоненты</h1>
+        <div class="catalog--product">
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/hydro-comp1.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Регулируемы гидронасосы</a>
                 </div>
-                <div class="about__news">
-                    <h1>Новости</h1>
-                    <div class="about__news--block">
-                        <img src="img/main/main-complite.png">
-                        <div>
-                            <p>Компания ПРОМАВТО приняла участие в бизнес-форуме в Индии</p>
-                            <span>12 Декабря 2023</span>
-                        </div>
-                    </div>
-                    <div class="about__news--block">
-                        <img src="img/main/main-complite.png">
-                        <div>
-                            <p>В министерстве нижегородской промышленности подвели итоги работы за 2022 год</p>
-                            <span>12 Декабря 2023</span>
-                        </div>
-                    </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/hydro-comp2.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Однопоточные гидронасосы</a>
                 </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/hydro-comp3.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Двухпоточные гидронасосы</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/hydro-comp4.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Гидромоторы</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
             </div>
         </div>
-        <div class="partner">
-            <div class="partner--container">
-                <h1>Клиенты и партнеры</h1>
-                <div class="partner__client">
-                    <img src="img/main/main-partner1.png">
-                    <img src="img/main/main-partner2.png">
-                    <img src="img/main/main-partner3.png">
-                    <img src="img/main/main-partner4.png">
-                    <img src="img/main/main-partner1.png">
-                    <img src="img/main/main-partner2.png">
+    </div>
+    <div class="catalog--container">
+        <h1>Аксессуары</h1>
+        <div class="catalog--product">
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories1.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Коннекторы и присоединительные трубы</a>
                 </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories2.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Отборы мощности</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/accessories3.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Предохранительные вентиля для гидравлических систем</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+        </div>
+    </div>
+    <div class="catalog--container">
+        <h1>Готовые решения</h1>
+        <div class="catalog--product">
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/ready1.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Сервисные машины для сервисных служб</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+            </div>
+            <div class="catalog--product--container catalog__animated--arrow">
+                <img src="img/catalog/ready2.png">
+                <div class="catalog--product--text">
+                    <a href="product.php">Готовые машины</a>
+                </div>
+                <span class="catalog--the-arrow -left">
+          <span class="catalog--shaft"></span>
+          </span>
+                </span>
             </div>
         </div>
     </div>
@@ -302,9 +340,6 @@
         </div>
     </div>
 </section>
-<script defer src="js/main/jquery.min.js"></script>
-<script defer src="js/main/swiper-bundle.min.js"></script>
-<script defer src="js/main/script.js"></script>
 <script defer src="js/header/script-header.js"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@
         </div>
         <div class="header--cap">
             <div class="header__logo">
-                <a href="index.html" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
+                <a href="index.php" class="header__logo--link"><img src="img/hydrocar-logo.png"></a>
                 <p class="header__logo--text">Качественные аксессуары для гидравлического оборудования</p>
             </div>
             <div class="header__connect">
@@ -92,11 +92,11 @@
                         </div>
                         <div class="header__menu--list">
                             <ul>
-                                <li class="animated--arrow"><a href="index.html">Главная</a></li>
+                                <li class="animated--arrow"><a href="index.php">Главная</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="catalog.html">Каталог товаров</a></li>
+                                    <a href="catalog.php">Каталог товаров</a></li>
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
@@ -109,11 +109,11 @@
                                 <li class="animated--arrow">
                 <span class="the-arrow -left">
                              <span class="shaft"></span>
-                         </span><a href="about.html">О компании</a></li>
+                         </span><a href="about.php">О компании</a></li>
                                 <li class="animated--arrow"><span class="the-arrow -left">
                              <span class="shaft"></span>
                          </span>
-                                    <a href="contact.html">Контакты</a>
+                                    <a href="contact.php">Контакты</a>
                                     <span class="arrow-bottom the-arrow -left">
                              <span class="shaft"></span>
                          </span></li>
@@ -124,17 +124,17 @@
             </div>
         </div>
         <div class="header__downNavigation">
-            <a href="index.html" class="header__navigation--link">Главная</a>
+            <a href="index.php" class="header__navigation--link">Главная</a>
             <img src="img/header/header-plug.svg">
-            <a href="catalog.html" class="header__navigation--link">Каталог товаров</a>
+            <a href="catalog.php" class="header__navigation--link">Каталог товаров</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Документация</a>
             <img src="img/header/header-plug.svg">
             <a href="#" class="header__navigation--link">Фото и видео</a>
             <img src="img/header/header-plug.svg">
-            <a href="about.html" class="header__navigation--link">О компании</a>
+            <a href="about.php" class="header__navigation--link">О компании</a>
             <img src="img/header/header-plug.svg">
-            <a href="contact.html" class="header__navigation--link">Контакты</a>
+            <a href="contact.php" class="header__navigation--link">Контакты</a>
         </div>
     </div>
 </section>
@@ -144,13 +144,13 @@
         <div class="breadcrumbs">
             <ul>
                 <li>
-                    <a href="index.html">
+                    <a href="index.php">
                         <span>Главная</span>
                     </a>
                 </li>
                 <li class="breadcrumbs-divider"><img src="img/breadcrumbs-line.svg"></li>
                 <li>
-                    <a href="catalog.html">
+                    <a href="catalog.php">
                         <span>Каталог</span>
                     </a>
                 </li>
@@ -401,7 +401,7 @@
             <div class="catalog--product--container catalog__animated--arrow">
                 <img src="img/catalog/accessories1.png">
                 <div class="catalog--product--text">
-                    <a href="product-detail.html">Регулируемы гидронасосы</a>
+                    <a href="product-detail.php">Регулируемы гидронасосы</a>
                 </div>
                 <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
@@ -410,7 +410,7 @@
             <div class="catalog--product--container catalog__animated--arrow">
                 <img src="img/catalog/accessories2.png">
                 <div class="catalog--product--text">
-                    <a href="product-detail.html">Однопоточные гидронасосы</a>
+                    <a href="product-detail.php">Однопоточные гидронасосы</a>
                 </div>
                 <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
@@ -420,7 +420,7 @@
             <div class="catalog--product--container catalog__animated--arrow">
                 <img src="img/catalog/accessories3.png">
                 <div class="catalog--product--text">
-                    <a href="product-detail.html">Двухпоточные гидронасосы</a>
+                    <a href="product-detail.php">Двухпоточные гидронасосы</a>
                 </div>
                 <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
@@ -429,7 +429,7 @@
             <div class="catalog--product--container catalog__animated--arrow">
                 <img src="img/catalog/accessories1.png">
                 <div class="catalog--product--text">
-                    <a href="product-detail.html">Гидромоторы</a>
+                    <a href="product-detail.php">Гидромоторы</a>
                 </div>
                 <span class="catalog--the-arrow -left">
           <span class="catalog--shaft"></span>
